@@ -39,7 +39,6 @@ public class RankLine {
                                 +organize.get(i)+","
                                 +score.get(i)+","
                                 +date.get(i));
-
                         bw.newLine();
                     }
                     bw.close();
@@ -61,7 +60,7 @@ public class RankLine {
     public static void main(String[] args) {
         List<String> urls=new ArrayList<String>();
 
-        for (int i=1;i<=21;i++){
+        for (int i=1;i<=10;i++){
             urls.add("http://tianchi.aliyun.com/competition/rankingList.htm?season=1&raceId=3&pageIndex="+i);
         }
         new RankLine().pholcus(urls);
